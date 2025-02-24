@@ -8,7 +8,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = "7657784751:7737311434:AAHo_j5ebxMhTII1k4uRlRCPuWP7LXH6ZFY"
 ADMIN_ID = 7310209040
-START_PY_PATH = "/workspaces/Free Fire/start.py"
+START_PY_PATH = "/workspaces/TeamMH/start.py"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 db_lock = Lock()

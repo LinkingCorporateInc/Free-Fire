@@ -80,7 +80,7 @@ def handle_start(message):
             """
 ```
 /crash UDP 143.92.125.230:10013 10 900```\n\n"""
-            "🔔 Última atualização lançada às: *17/02/25 - 11:20 (1.3 - Alpha)*\n"
+            "🔔 Última atualização lançada às: *24/02/25 - 05:16 (1.4 - Alpha)*\n"
             "👑 Desenvolvedor: *@lukeewqz7*"
         ),
         reply_markup=markup,

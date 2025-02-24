@@ -6,9 +6,9 @@ from threading import Lock
 import time
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = "Cole seu Token aqui..."
-ADMIN_ID = Cole seu Id aqui...
-START_PY_PATH = "/workspaces/MHDDoS/start.py"
+BOT_TOKEN = "7657784751:AAH0kXeU8pt8hKdrxXHaxunrHf78ipSaJ5o"
+ADMIN_ID = 7310209040
+START_PY_PATH = "/workspaces/Free Fire/start.py"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 db_lock = Lock()
@@ -57,8 +57,8 @@ def handle_start(message):
         vip_status = "😔 Ops... você não tem um plano ativo!"
     markup = InlineKeyboardMarkup()
     button = InlineKeyboardButton(
-        text="Adiquirir Base",
-        url=f"tg://user?id=7310209040"
+        text="Adiquirir Plano",
+        url=f"tg://user?id={ADMIN_ID}"
 
     )
     markup.add(button)
@@ -66,7 +66,7 @@ def handle_start(message):
     bot.reply_to(
         message,
         (
-            "👋🏻 *Bem-vindo(a) ao Free Fire Brasil | Crash, O Melhor bot de crash brasileiro atualmente!*"
+            "👋🏻 *Bem-vindo(a) ao El Hero Brasil | Crash, O Melhor bot de crash brasileiro atualmente!*"
             
 
             f"""
@@ -80,8 +80,8 @@ def handle_start(message):
             """
 ```
 /crash UDP 143.92.125.230:10013 10 900```\n\n"""
-            "🔔 *Não remova os créditos!*\n"
-            "👑 Desenvolvedor da Base: *@lukeewqz7*"
+            "🔔 Última atualização lançada às: *24/02/25 - 05:16 (0.1 - Alpha)*\n"
+            "👑 Desenvolvedor: *@lukeewqz7*"
         ),
         reply_markup=markup,
         parse_mode="Markdown",
@@ -158,7 +158,7 @@ def handle_ping(message):
                 """
 ```
 /crash UDP 143.92.125.230:10013 10 900```\n\n"""
-                "👑 *Desenvolvedor da Base:* *@lukeewqz7*"
+                "👑 Desenvolvedor: *@lukeewqz7*"
             ),
             parse_mode="Markdown",
         )
@@ -185,7 +185,7 @@ def handle_ping(message):
             f"⚙️ *Tipo:* {attack_type}\n"
             f"🧟 *Threads:* {threads}\n"
             f"⏳ *Tempo (ms):* {duration}\n\n"
-            f"👑 Desenvolvedor da Base: *@iamlukeewqz*"
+            f"👑 Desenvolvedor: *@lukeewqz7*"
         ),
         reply_markup=markup,
         parse_mode="Markdown",

@@ -44,7 +44,7 @@ def handle_start(message):
     if result:
         expiration_date = datetime.strptime(result[0], "%Y-%m-%d %H:%M:%S")
         if datetime.now() > expiration_date:
-            vip_status = "🎁 Seu plano expirou-se."
+            vip_status = "📅 Seu plano expirou-se."
         else:
             dias_restantes = (expiration_date - datetime.now()).days
             vip_status = (
